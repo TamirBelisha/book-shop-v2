@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-style: bold;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgb(237, 238, 201);
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+.books-container {
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(129, 129, 36);
+    height: 20vh;
+    width: 100vw;
+}
+
+h1,
+h3 {
+    color: white;
+}
+
+table {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 0), rgb(255, 255, 104));
+    height: 40vh;
+    width: 70vw;
+    border: 2px solid rgb(51, 6, 6);
+    padding: 1em;
+    margin: 1em;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid rgb(36, 33, 33);
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+td {
+    border: 1px solid rgb(36, 33, 33);
+    padding: 0.4em;
+}
+
+button {
+    height: 2em;
+    width: 7em;
+    position: relative;
+    color: white;
+    border-radius: 0.4em;
+    border-style: none;
+    cursor: pointer;
+}
+
+.add {
+    font-size: 1em;
+    color: rgb(129, 129, 36);
+    background-color: rgb(212, 212, 150);
+    position: absolute;
+    bottom: 0.1em;
+    margin-left: 0.2em;
+}
+
+.read {
+    background-color: rgb(51, 47, 47);
+}
+
+.update {
+    background-color: rgb(139, 126, 126);
+}
+
+.delete {
+    background-color: rgb(78, 10, 10);
+}
+
+.add-book-section {
+    background-image: linear-gradient(to bottom, rgb(129, 129, 36), rgba(129, 129, 36, 0.829));
+    position: relative;
+}
+
+.modall {
+    background-color: rgb(51, 47, 47);
+    color: yellow;
+    height: 70vh;
+    min-width: 30vw;
+    border-radius: 4em;
+    position: absolute;
+    top: 0;
+    right: 150%;
+    padding: 2em;
+}
+
+.modall>p {
+    font-size: 0.7em;
+}
+
+.modall>h2,
+h3 {
+    color: white;
+}
+
+.rate-buttons {
+    background-color: rgb(139, 126, 126);
+    width: 4em;
+}
+
+.rate-input {
+    width: 7em;
+    height: 1.5em;
+}
+
+.rate-value {
+    display: inline-block;
+}
+
+.close-modal {
+    background-color: rgb(139, 126, 126);
+    position: absolute;
+    margin-top: 1em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modall.open {
+    right: 50%;
+    transition: right 0.5s;
+}
+
+.trans-dropdown {
+    background-color: rgb(129, 129, 36);
+    border: 0;
+    color: white;
+    font-size: 0.9em;
+}

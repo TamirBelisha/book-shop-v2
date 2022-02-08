@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title data-trans="title">Book shop</title>
+</head>
+
+<body onload="onInit()">
+    <header>
+        <h1 data-trans="header-1">Book shop</h1>
+        <h3 data-trans="header-2">Manage your books here</h3>
+        <select class="trans-dropdown" onchange="onSetLang(this.value)">
+            <option value="en">English</option>
+            <option value="he">עברית</option>
+        </select>
+    </header>
+    <section class="add-book-section">
+        <input type="text" name="add-name" data-trans="input-name" placeholder="Name of the book?"> <br>
+        <input type="text" name="add-price" data-trans="input-price" placeholder="Price of the book?">
+        <button onclick="onAddBook()" data-trans="add-book-btn" class="add">Add book</button>
+    </section>
+    <section class="books-container"></section>
+    <div class="modall">
+        <h2 data-trans="modal-header"></h2>
+        <h3 data-trans="modal-rate" style="display: inline-block;">Rate : </h3> <span class="span-rate"></span> <br>
+        <h4 data-trans="modal-price" style="display: inline-block;">Price : </h4> <span class="span-price"></span>
+        <h5 data-trans="modal-desc">Book description</h5>
+        <p></p>
+        <button onclick="onCloseModal()" data-trans="modal-close-btn" class="close-modal">Close</button>
+    </div>
+    <script src="js/services/util.service.js"></script>
+    <script src="js/services/i18n.service.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/book.service.js"></script>
+    <script src="js/book.controller.js"></script>
+</body>
+
+</html>
